@@ -1,0 +1,15 @@
+name: mri
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - pip:
+    - numpy
+    - dicom2nifti
+    - torchio
+    - imageio
+    - nilearn
+    - matplotlib
+    - ipywidgets
+    - notebook
