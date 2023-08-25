@@ -1,4 +1,4 @@
-### MRI visualisation
+### MRI visualization
 
     Subject
 
@@ -23,4 +23,4 @@ mri.py implements the Process class and a main method that instantiates it and c
 loads it, executes a resampling that double the scans resolution, filters and rescales to a given pixel intensities interval and plots the resulting image at the start and end stage.  
 Note the second display call loads the axial slice of the MRI image at an index double that of the first display, although the slice is identical. That is to verify the resampling was executed as expected.  
 
-visual.ipynb implements the axial, sagittal and coronal 3D visualisation of the MRI image and the brain segment extraction  
+visual.ipynb implements the axial, sagittal and coronal 3D visualization of the MRI image and the brain segment extraction  
