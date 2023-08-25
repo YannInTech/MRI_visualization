@@ -1,5 +1,4 @@
 ### MRI visualisation
-### Yann Monneyron
 
     Subject
 
