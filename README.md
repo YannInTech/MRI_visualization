@@ -1,6 +1,6 @@
-### MRI visualization
+# MRI visualization
 
-    Subject
+## Subject
 
 This repository provides imaging processing capabilities for NIfTI 3D data and covers the following functions:  
 1. Convert MRI scans from DICOM to NIfTI format  
@@ -9,13 +9,13 @@ This repository provides imaging processing capabilities for NIfTI 3D data and c
 4. N4 correction of MRI scans  
 5. Brain Extraction  
 
-    Files
+## Files
 
 mri.py  
 visual.ipynb  
 environment.yml  
 
-    Description
+## Description
 
 environment.yml contains the python conda environment libraries required for this program  
 
