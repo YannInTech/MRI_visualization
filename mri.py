@@ -31,7 +31,7 @@ class Process():
         if from_file and imgFileName.endswith('.nii'):
             imgWithHeader = nib.load(self.niftiPath+imgFileName)
             img=imgWithHeader.dataobj
-            #print(imgWithHeader.header) # access metadata
+            print(imgWithHeader.header) # access metadata
             plt.imshow(ndi.rotate(img[:,axial,:],90))
 
         elif not from_file and ext=='nii':
@@ -43,7 +43,7 @@ class Process():
 
         else:
             img = iio2.imread(self.source+imgFileName)
-            #print(img.meta) # access metadata
+            print(img.meta) # access metadata
             plt.imshow(img)
         plt.show()
 
@@ -106,9 +106,10 @@ class Process():
 if __name__ == "__main__":
 
     set=Process()
-    set.convertToNifti()
+    #set.convertToNifti()
     set.displayOne('anon_AD01.nii',axial=52)
-    set.getNifti('anon_AD01.nii')
-    set.NiftiTransform(samplingTuple=(0.5,0.5,0.5),sizeTuple=None)
-    set.Filter()
-    set.displayOne(set.niftiImg, axial=104, from_file=False)
+    set.displayOne('anon_AD01_30.dcm')
+    #set.getNifti('anon_AD01.nii')
+    #set.NiftiTransform(samplingTuple=(0.5,0.5,0.5),sizeTuple=None)
+    #set.Filter()
+    #set.displayOne(set.niftiImg, axial=104, from_file=False)
